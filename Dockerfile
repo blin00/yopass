@@ -1,4 +1,4 @@
-FROM golang:stretch as app
+FROM golang:buster as app
 RUN mkdir -p /yopass
 WORKDIR /yopass
 COPY . .
@@ -6,6 +6,7 @@ WORKDIR /yopass/cmd/yopass
 RUN go get && go build
 
 FROM node as website
+COPY logo /logo
 COPY website /website
 WORKDIR /website
 RUN yarn install && yarn build

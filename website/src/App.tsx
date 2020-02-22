@@ -45,6 +45,12 @@ const Attribution = () => {
   return (
     <Container className="text-center">
       <div className="text-muted small footer">
+        https://whisper.brandonlin.me
+        <br />
+        http://whisperme5rqb3pa.onion
+        <br />
+        http://whisper3rb7b3kcawctca7xuvawopdgerdwwkuwsmycaum5l5mz2jwid.onion
+        <hr />
         Created by <a href="https://github.com/jhaals/yopass">Johan Haals</a>
       </div>
     </Container>
